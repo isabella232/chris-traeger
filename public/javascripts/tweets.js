@@ -9,6 +9,10 @@ $(document).ready(function() {
   });
 
   setInterval(function() {
+    if (tweets.length < 10) {
+      socket.emit('send', {});
+    }
+
     var tweet = tweets.shift();
     if(tweet != null) {
 

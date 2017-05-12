@@ -44,6 +44,8 @@ body {
 }
 
 .tweet__user {
+  left: 70%;
+  bottom: 30%;
   position: absolute;
   bottom: 86px;
   margin-top: 20px;
@@ -53,6 +55,7 @@ body {
 
 .tweet__time {
   position: absolute;
+  left: 70%;
   bottom: 30px;
   color: #666;
   font-size: 60%;
@@ -65,4 +68,12 @@ body {
 .stats {
   font-size: 30%;
   opacity: 0.3;
+}
+
+.logo{
+  position: fixed;
+  width: 23%;
+  bottom:0px;
+  left:0px;
+  z-index: -1;
 }
