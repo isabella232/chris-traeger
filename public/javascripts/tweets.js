@@ -16,8 +16,8 @@ $(document).ready(function() {
     var tweet = tweets.shift();
     if(tweet != null) {
 
-      $(".tweet__user").fadeOut();
-      $(".tweet__time").fadeOut();
+      $(".tweet__user").fadeOut(500);
+      $(".tweet__time").fadeOut(500);
 
       $(".tweet__text").fadeReplace(tweet.text, function(text) {
         return text.replace(/(@\w+)/g, "<span class='username'>\$1</span>")

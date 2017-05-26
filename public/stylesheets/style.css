@@ -1,6 +1,6 @@
 body {
     margin: 40px;
-    font-family: 'Helvetica Neue', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 200;
     font-size: 60px;
     -webkit-user-select: none;
@@ -20,6 +20,10 @@ body {
 
 .tweet__text {
   font-size: 120%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 20%;
 }
 
 .tweet__text span {
@@ -65,15 +69,24 @@ body {
   padding-bottom: 5px;
 }
 
+.tweet {
+  margin-top: 15%;
+}
+
 .stats {
   font-size: 30%;
   opacity: 0.3;
 }
 
-.logo{
+.logo {
   position: fixed;
-  width: 23%;
-  bottom:0px;
-  left:0px;
+  width: 100%;
+  bottom: 2%;
+  left: 0px;
+  text-align: center;
   z-index: -1;
+}
+
+.logo img {
+  width: 15%;
 }

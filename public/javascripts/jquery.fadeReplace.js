@@ -3,7 +3,7 @@
     if($(this).children("span").length == 0) {
       $(this).html(textToSpans($(this).text(), formatter));
     }
-    replaceWords(this, textToSpans(text, formatter), 200, 20, callback);
+    replaceWords(this, textToSpans(text, formatter), 500, 20, callback);
   };
 
   function replaceWords(element, words, speed, delay, callback) {
