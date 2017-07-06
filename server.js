@@ -35,7 +35,7 @@ app.get('/', (req, res) => {
 
 var params = {
   screen_name: 'LobProps',
-  count: 40
+  count: 15
 }
 
 io.on('connection', (socket) => {
